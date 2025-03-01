@@ -1,0 +1,16 @@
+<!-- Task details -->
+<!-- templates/tasks/detail.html -->
+{% extends "base.html" %}
+{% block title %}{{ task.title }}{% endblock %}
+{% block content %}
+<h1>{{ task.title }}</h1>
+<div class="card">
+    <div class="card-body">
+        <p><strong>Description:</strong> {{ task.description or 'No description' }}</p>
+        <p><strong>Status:</strong> {{ task.status }}</p>
+        <p><strong>Priority:</strong> {{ task.priority }}</p>
+        <p><strong>Due Date:</strong> {{ task.due_date }}</p>
+    </div>
+</div>
+<a href="{{ url_for('tasks.list_tasks') }}" class="btn btn-primary mt-3">Back to Tasks</a>
+{% endblock %}
