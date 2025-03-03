@@ -1,5 +1,4 @@
 # Main Flask application
-# app.py
 from flask import Flask, redirect, url_for
 from config import Config
 from models import db

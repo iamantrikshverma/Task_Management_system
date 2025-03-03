@@ -17,7 +17,7 @@ def create_file(path, content=''):
     else:
         print(f"File already exists: {path}")
 
-# Define the project structure
+# the project structure
 directories = [
     'task_management_app',
     'task_management_app/views',
